@@ -18,5 +18,6 @@ class Product extends Model
         'quantity',
         'datecad',
         'image',
+        'id_category',
     ];
 }

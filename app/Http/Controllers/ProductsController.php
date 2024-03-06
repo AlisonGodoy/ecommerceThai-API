@@ -26,6 +26,7 @@ class ProductsController extends Controller
             'description'   => 'required|string',
             'price'         => 'required|numeric',
             'quantity'      => 'required|integer',
+            'id_category'   => 'required|integer',
             'image'         => 'nullable|string',
         ]);
         
@@ -33,6 +34,7 @@ class ProductsController extends Controller
             'description'   => $request->get('description'),
             'price'         => $request->get('price'),
             'quantity'      => $request->get('quantity'),
+            'id_category'   => $request->get('id_category'),
             'image'         => $request->get('image'),
             'datecad'       => now(),
         ]);
@@ -51,6 +53,7 @@ class ProductsController extends Controller
             'description'   => 'required|string',
             'price'         => 'required|numeric',
             'quantity'      => 'required|integer',
+            'id_category'   => 'required|integer',
             'image'         => 'nullable|string',
         ]);
 
@@ -61,10 +64,11 @@ class ProductsController extends Controller
         }
 
         $product->update([
-            'description' => $request->get('description'),
-            'price' => $request->get('price'),
-            'quantity' => $request->get('quantity'),
-            'image' => $request->get('image'),
+            'description'   => $request->get('description'),
+            'price'         => $request->get('price'),
+            'quantity'      => $request->get('quantity'),
+            'id_category'   => $request->get('id_category'),
+            'image'         => $request->get('image'),
         ]);
 
         return response()->json(['success' => true, 'message' => 'Produto alterado com sucesso!']);
