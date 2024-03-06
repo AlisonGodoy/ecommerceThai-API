@@ -1,2 +1,2 @@
-<h3>Front-End Aplicação Ecommerce Vue.js</h3>
+<h3>BackEnd Aplicação Ecommerce Laravel</h3>
 <p>Bem-vindo ao repositório do BackEnd Laravel para a aplicação de E-commerce de uma academia de Muay Thai. Este projeto é parte de um sistema completo que inclui um FrontEnd Vue, disponível em https://github.com/AlisonGodoy/ecommerceThai.</p>
